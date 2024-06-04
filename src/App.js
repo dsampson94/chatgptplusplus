@@ -1,4 +1,4 @@
-import 'tailwindcss/dist/tailwind.min.css';
+import './tailwind.css';
 
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -30,7 +30,7 @@ function App() {
 
                 <div className="input-container">
                     <input name="input"
-                           className="bg-gray-500 text-white rounded-lg p-2 w-full"
+                           className="bg-gray-500 text-white rounded-lg p-2 w-1/2"
                            type="text"
                            value={ prompt }
                            onChange={ e => setPrompt(e.target.value) }
